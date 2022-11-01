@@ -103,7 +103,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aldrin Mathew, Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Aldrin Mathew`,
       },
       prism: {
         theme: lightCodeTheme,
