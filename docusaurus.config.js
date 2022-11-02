@@ -9,7 +9,7 @@ const config = {
   title: 'Qat language docs',
   tagline: 'Envisioned to be superfast, modern systems language for efficient and maintainable software...',
   url: 'https://docs.qat.dev',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
