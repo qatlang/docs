@@ -16,8 +16,5 @@ Please select your platform from the list below to get detailed steps regarding 
 
 ## Tools
 
-At the moment, the language only has minimal IDE integration support. If you are using VSCode
-as your IDE, congrats, there is an official extension for the language available
-[here](https://marketplace.visualstudio.com/items?itemName=aldrinsartfactory.qat)
-which has code highlighting, and analysis support (errors & warnings)
+At the moment, the language only has minimal IDE integration support. If you are using VSCode as your IDE, congrats, there is an official extension for the language available [here](https://marketplace.visualstudio.com/items?itemName=aldrinsartfactory.qat) which has code highlighting, and analysis support (errors & warnings)
 
