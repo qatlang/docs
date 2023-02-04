@@ -1,6 +1,6 @@
 ---
 title: String Slice
-slug: /types_basic/string_slice
+slug: /types/string_slice
 sidebar_position: 3
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Boolean
-slug: /types_basic/bool
+slug: /types/bool
 sidebar_position: 2
 ---
 

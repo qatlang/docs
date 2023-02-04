@@ -1,6 +1,6 @@
 ---
 title: Floating Point Numbers
-slug: /types_basic/floating_point_numbers
+slug: /types/floating_point_numbers
 sidebar_position: 4
 ---
 

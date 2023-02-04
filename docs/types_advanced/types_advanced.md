@@ -6,5 +6,5 @@ sidebar_position: 6
 
 These are the advanced datatypes in the language
 
-- [Custom Bitwidth Integers](/types_advanced/custom_bitwidth_integers)
+- [Custom Bitwidth Integers](/types/custom_bitwidth_integers)
 
