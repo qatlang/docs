@@ -11,11 +11,19 @@ sidebar_position: 3
 - This text representation is encoding agnostic. It uses an unsigned 8-bit integer array to represent the text data. This makes it convenient to consider each byte (8 bits) as an individual character, which is a common approach in C and C++, but this system is open to interpretation.
 - Easily compatible with C-style strings as you can obtain the underlying buffer that points to the integer data
 
-#### Safer than C-style strings
+### String Literals
+
+`"Hello World"`, `"My name is Qat"`, `""`, `"234"` are all string literals. A string literal used to represent text/textual data. A string is enclosed with `"`. What if you want to include the character `"` inside the text? Simple. You can put a `\` in front of it to escape the character from being understood as a normal `"`. Like in
+
+```qat
+"Hi, this is my friend Sam. He is an \"Entrepreneur\"."
+```
+
+### Safer than C-style strings
 
 While it is necessary for a language to have support for C-style strings, to integrate FFI or to call C functions, it doesn't make sense to have that as the default behaviour for a new systems language, especially because C-style strings loses information about the length of the buffer. Not in all cases though, it can be retrieved later in most cases. That is, as long as the original string doesn't contain the null character `\0` in the middle. C-style strings expect the null character at the end, so you can iterate over the buffer to find the length programmatically. However this system can easily be fooled by creating an array without a trailing null.
 
-#### Underlying LLVM Type
+### Underlying LLVM Type
 
 ```llvm
 type str = { i8*, i64 }
