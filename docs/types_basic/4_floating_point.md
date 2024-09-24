@@ -4,13 +4,13 @@ slug: /types/floating_point_numbers
 sidebar_position: 4
 ---
 
-- `f16`, `f32`, `f64`, `f80`, `f128`, `f128ppc` and `fbrain` are the all floating point types
+- `f16`, `f32`, `f64`, `f80`, `f128`, `f128ppc` and `fbrain` are the all floating point types supported in the language.
 
-- Unlike, integer types, appending the bitwidth to `f` does not give a floating point number with that bitwidth
+If you are a beginner, or if you are unsure which type to use, it is recommended to use `f32` as that should be more than enough. If you want more precision, then use `f64` (which is also known as `double` in other languages - as it offers double the precision of `f32`).
 
 ### Float Literals
 
-These are numbers with a fractional part. `0.534`, `-7.34`, `46317.875`, `-8348.3`... are all float literals. By default, these are 32-bit floating point numbers.
+These are numbers with a fractional part. `0.534`, `-7.34`, `46317.875`, `-8348.3`... are all float literals. By default, these values are of type `f32`. If you want the literal values to have a different type instead, suffix the desired type at the end of the value, like this: `0.06_f64`
 
 ### Why this many kinds of floating point numbers?
 
