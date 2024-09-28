@@ -51,3 +51,27 @@ pub main -> int [
 
 Why is it possible to remove the `()`? The `()` means that the function receives no arguments. Well, qat allows you to skip it since you have provided a given type for the function. While parsing, there are two ways for qat to know that something is a function. First is the format `functionName()` which means that the function does not accept any arguments and does not have any given value. Second is the format `functionName -> int` which means that it has a given value. In both these cases, qat recognises this entity as a function. So if you already provided a given type, and the function accepts no arguments, then `()` is not necessary.
 
+### Your first function
+
+Remember the `say` sentence mentioned previously? Let's use that in our main function.
+
+```qat
+pub main -> int [
+	say "Hello, World!".
+	give 0.
+]
+```
+
+Save the code in a file. Let's say that the file is named `main.qat`. Make sure that you have followed all the installation instructions. Now open the terminal and run the command `qat run main.qat`
+
+You should see the following output in the terminal:
+
+```
+Hello, World!
+```
+
+You can change `"Hello, World!"` to any other message and run the code again using the command to see your message being output to the terminal.
+
+:::info
+Even though the `main` function is universally recognised as the starting point of a program in most languages (at least static or conventional languages), the actual entrypoint is dependent on the operating system or the implementation or toolchain of the programming language. For example, before the logic of the main function is executed, global variables in the program might have to be initialised or constructed in some languages. When you compile C using gcc on linux, `_start` is actually the entrypoint, which calls main within itself. Basically, you can say that `main` is the entrypoint of the language or of the logic of the program.
+:::
